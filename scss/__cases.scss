@@ -1,0 +1,88 @@
+.cases {
+  margin-top: 220px;
+
+    &__title {
+      font-family: SONGER SemiExpanded;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 32px;
+      letter-spacing: 20%;
+      text-align: left;
+      text-transform: uppercase;
+      color: $sec-color;
+      margin-bottom: 24px;
+    }
+}
+
+  .accordion {
+    &__items {
+      padding: 73px 0;
+      border-bottom: 2px solid $sec-color;
+      border-top: 2px solid $sec-color;
+      cursor: pointer;
+      transition: all .3s;
+      
+      &:hover {
+        background-color: $sec-color;  
+        transition: all .3s;
+      }
+
+      &:hover .accordion__item_title {
+        color: $base-color;
+        transition: all .3s;
+      }
+
+      &:hover .accordion__item_text {
+        color: $base-color;
+        transition: all .3s;
+      }
+
+      &:hover .accordion__item_img svg path {
+        stroke: $base-color;
+        transition: all .3s;
+      }
+
+      &:hover .accordion__item_img svg {
+        transform: rotate(45deg);
+        transition: all .3s;
+      }
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 26px 1fr 1fr;
+      gap: 38px;
+  
+        &_img {
+          place-items: center;
+          display: grid;
+        }
+
+        &_title {
+          font-family: Montserrat;
+          font-size: 56px;
+          font-weight: 700;
+          line-height: 110%;
+          letter-spacing: 0%;
+          text-align: left;
+          color: $sec-color;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+        }
+
+        &_text {
+          font-family: Unbounded;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: right;
+          text-transform: uppercase;
+          color: $acccent-color;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+  
+        }
+    }
+}

@@ -1,0 +1,11 @@
+$base-color: rgb(9, 9, 9);
+$acccent-color: rgb(223, 187, 135);
+$sec-color: rgb(183, 171, 152);
+$white: #fff;
+
+body {
+    font-family: SONGER SemiExpanded;
+    background-color: $base-color;
+    background-image: url('./../public/Shape-3.png');
+    transition: all .3s;
+}

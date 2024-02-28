@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &__item {
+
+    &_link {
+      text-decoration: none;
+      color: $sec-color;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: left;
+      text-transform: uppercase
+    }
+  }
+}
+
+.container {
+
+  &__header {
+    
+    width: min(100% - 63px, 1920px);
+    margin-inline: auto;
+  
+  }
+}
