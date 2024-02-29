@@ -1,2 +1,39 @@
-@font-face font-family: "RobotoRegular"
-src : url("../fonts/RobotoRegular/RobotoRegular.ttf")
+@font-face {
+  font-family: Unbounded;
+  src: url("fonts/Unbounded-Regular.ttf") format("tff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Unbounded-Medium;
+  src: url("fonts/Unbounded-Bold.ttf") format("tff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SONGER SemiExpanded;
+  src: url("fonts/SONGER™_SE_Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SONGER SemiExpanded;
+  src: url("fonts/SONGER™_SE_Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat-VariableFont_wght.ttf") format("tff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+

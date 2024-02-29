@@ -1,0 +1,71 @@
+.footer {
+  padding: 56px;
+
+    &__contact {
+      
+
+
+        &_items {
+          display: flex;
+          align-items: center;
+         justify-content: space-between;
+        }
+
+
+        &_box {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          gap: 12px;
+
+          & svg {
+            margin-left: -30px;
+          }
+        }
+
+
+        &_item {
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          transition: all .3s;
+
+          &:hover {
+            background-color: $acccent-color;
+            transition: all .3s;
+
+            & .footer__contact_text {
+              color: $base-color;
+              opacity: 1;
+            }
+
+            & .footer__contact_link {
+              color: $base-color;
+            }
+          }
+        }
+
+        &_text {
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 160%;
+          letter-spacing: 0%;
+          color: $sec-color;
+          opacity: 0.5;
+          transition: all .3s;
+        }
+
+        &_link {
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 160%;
+          letter-spacing: 0%;
+          color: $sec-color;
+          transition: all .3s;
+        }
+    }
+}
+
+

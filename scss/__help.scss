@@ -3,6 +3,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image: url('./../public/image 3.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
 
     &__suptitle {
       font-family: SONGER SemiExpanded;
@@ -78,4 +85,14 @@
     color: $sec-color;
 
   }
+}
+
+
+.down  {
+  padding-bottom: 140px;
+  background-image: url('./../public/desert_clock.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
