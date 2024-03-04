@@ -2,13 +2,17 @@
   padding: 56px;
 
     &__contact {
-      
-
 
         &_items {
           display: flex;
           align-items: center;
          justify-content: space-between;
+
+         @media (max-width: 580px) {
+            align-items: flex-start;
+            flex-direction: column;
+        
+         }
         }
 
 

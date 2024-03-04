@@ -24,6 +24,10 @@
       border-top: 1px solid  rgba(183, 171, 152, 0.304);
       padding: 50px 0;
 
+      @media (max-width: 580px) {
+            padding: 40px 0;
+      }
+
         &_text {
         
         
@@ -35,6 +39,10 @@
           letter-spacing: 0%;
           margin-top: 20px;
           color: $sec-color;
+
+          @media (max-width: 580px) {
+            font-size: 18px;
+          }
         }
 
         & span {
@@ -51,6 +59,10 @@
           margin-top: 32px;
           color: $sec-color;
           opacity: .5;
+
+          @media (max-width: 580px) {
+            font-size: 12px;
+          }
         }
 
         &_name {
@@ -60,6 +72,10 @@
           line-height: 160%;
           letter-spacing: 0%;
           color: $sec-color;
+
+          @media (max-width: 580px) {
+            font-size: 18px;
+          }
         }
     }
 }

@@ -16,12 +16,50 @@
 }
 
   .accordion {
+    &__wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      overflow: hidden;
+      transition: 300ms grid-template-rows linear;
+
+      &.open {
+        grid-template-rows: 1fr;
+      }
+    }
+
+
+
+    &__content {
+      background-color: $sec-color;
+      color: $base-color;
+      min-height: 0;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 160%;
+      margin-top: 32px;
+
+      & p {
+        margin-bottom: 20px;
+      }
+    }
+
     &__items {
       padding: 73px 0;
       border-bottom: 2px solid $sec-color;
       border-top: 2px solid $sec-color;
       cursor: pointer;
       transition: all .3s;
+
+      @media (max-width: 580px) {
+        padding: 25px 0 20px;
+      }
+      
+      &.open {
+        background-color: $sec-color;
+        border-bottom: 2px solid $base-color;
+        border-top: 2px solid $base-color;
+      }
       
       &:hover {
         background-color: $sec-color;  
@@ -43,20 +81,33 @@
         transition: all .3s;
       }
 
-      &:hover .accordion__item_img svg {
-        transform: rotate(45deg);
-        transition: all .3s;
-      }
+      // &:hover .accordion__item_img svg {
+      //   transform: rotate(45deg);
+      //   transition: all .3s;
+      // }
     }
 
     &__item {
       display: grid;
       grid-template-columns: 26px 1fr 1fr;
       gap: 38px;
+      grid-template-areas: "img title text";
+
+      @media (max-width: 580px) {
+        grid-template-areas: "img title title"
+        "img text text";
+      }
   
         &_img {
           place-items: center;
           display: grid;
+          transition: all .3s;
+          grid-area: img;
+
+          &.open {
+            transition: transform .3s;
+            transform: rotate(45deg);
+          }
         }
 
         &_title {
@@ -70,6 +121,11 @@
           display: flex;
           align-items: center;
           justify-content: start;
+          grid-area: title;
+
+           @media (max-width: 580px) {
+            font-size: 32px;
+           }
         }
 
         &_text {
@@ -83,7 +139,12 @@
           display: flex;
           align-items: center;
           justify-content: end;
-  
+          grid-area: text;
+
+          @media (max-width: 580px) {
+            justify-content: flex-start;
+          }
+          
         }
     }
 }

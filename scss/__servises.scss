@@ -18,6 +18,10 @@
           align-items: flex-start;
           justify-content: space-between;
 
+           @media (max-width: 580px) {
+             flex-direction: column;
+           }
+
       &_left {
         display: flex;
         flex-direction: column;
@@ -30,6 +34,11 @@
         flex-direction: column;
         align-items: flex-end;
         gap: 32px;
+
+         @media (max-width: 580px) {
+            align-items: flex-start;
+            gap: 16px;
+         }
       }
 
         &_title {
@@ -37,6 +46,10 @@
           font-size: 36px;
           font-weight: 700;
           line-height: 110%;
+
+           @media (max-width: 580px) {
+            font-size: 24px;
+           }
         }
 
         &_text {
@@ -54,6 +67,11 @@
           letter-spacing: 15%;
           text-transform: uppercase;
 
+          @media (max-width: 580px) {
+            margin-top: 32px;
+
+          }
+
           & span {
             font-family: Unbounded;
             font-size: 32px;
@@ -61,6 +79,11 @@
             line-height: 40px;
             text-transform: uppercase;
             color: $acccent-color;
+
+            @media (max-width: 580px) {
+              font-size: 24px;
+
+            }
           }
         }
 
@@ -76,10 +99,7 @@
           text-decoration: none;
           color: $sec-color;
           border-bottom: 2px solid $sec-color;
-
         
         }
     }
 }
-
-.container {}

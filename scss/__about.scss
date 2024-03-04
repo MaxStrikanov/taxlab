@@ -29,6 +29,10 @@
       letter-spacing: 0%;
       text-align: left;
       color: $sec-color;
+
+      @media (max-width: 580px) {
+        font-size: 30px;
+      }
     }
 
     &__text {
@@ -111,6 +115,10 @@ background-size: cover;
     letter-spacing: 0%;
     text-align: left;
     color: $sec-color;
+
+    @media (max-width: 580px) {
+      font-size: 30px;
+    }
 
     &:nth-child(5) {
       margin-top: 24px;
