@@ -23,6 +23,13 @@
     &__item {
       border-top: 1px solid  rgba(183, 171, 152, 0.304);
       padding: 50px 0;
+      position: relative;
+
+      & img {
+        position: absolute;
+        top: 65px;
+        left: -50px;
+      }
 
       @media (max-width: 580px) {
             padding: 40px 0;
