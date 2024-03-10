@@ -12,17 +12,45 @@
   <section class="header__wrapper">
     <header class="header container__header">
 
-      <div class="header_logo">
-        <img src="/Logo.svg" alt="">
+      <div class="header__logo">
+        <img src="/tax lab.svg" alt="">
       </div>
-      <nav class="header__memu">
-        <ul class="header__items">
-          <li class="header__item"><a data-link="cases" class="header__item_link">кейсы</a></li>
-          <li class="header__item"><a data-link="services" class="header__item_link">услуги</a></li>
-          <li class="header__item"><a data-link="reviews" class="header__item_link">отзывы</a></li>
-          <li class="header__item"><a data-link="contacts" class="header__item_link">контакты</a></li>
+      <div class="header_menu">
+        <ul class="header_menu_list ul__reset">
+          <li class="header_menu_item js-cursor-contract">
+            <a data-link="cases" class="desc text-uppercase has-tag-handle">
+              <span class="header_menu_item_inner">
+                <span class="header_menu_item_link header_menu_item_link__deep">кейсы</span>
+                <span class="header_menu_item_link header_menu_item_link__active">кейсы</span>
+              </span>
+            </a>
+          </li>
+          <li class="header_menu_item js-cursor-contract">
+            <a data-link="services" class="desc text-uppercase has-tag-handle">
+              <span class="header_menu_item_inner">
+                <span class="header_menu_item_link header_menu_item_link__deep">услуги</span>
+                <span class="header_menu_item_link header_menu_item_link__active">услуги</span>
+              </span>
+            </a>
+          </li>
+          <li class="header_menu_item js-cursor-contract">
+            <a data-link="reviews" class="desc text-uppercase has-tag-handle">
+              <span class="header_menu_item_inner">
+                <span class="header_menu_item_link header_menu_item_link__deep">отзывы</span>
+                <span class="header_menu_item_link header_menu_item_link__active">отзывы</span>
+              </span>
+            </a>
+          </li>
+          <li class="header_menu_item js-cursor-contract">
+            <a data-link="contacts" class="desc text-uppercase has-tag-handle">
+              <span class="header_menu_item_inner">
+                <span class="header_menu_item_link header_menu_item_link__deep">контакты</span>
+                <span class="header_menu_item_link header_menu_item_link__active">контакты</span>
+              </span>
+            </a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <main class="main__title">
@@ -218,7 +246,7 @@
     </div>
   </section>
 
-  <section class="services" id="services">
+  <section class="services " id="services">
     <div class="container">
       <h3 class="cases__title">Услуги и стоимость</h3>
     </div>
@@ -227,7 +255,7 @@
   <section class="help" id="help">
     <h3 class="help__suptitle">Юридическое сопровождение бизнеса</h3>
 
-    <h1 class="help__title">мы готовы помочь в любое время</h1>
+    <h1 class="help__title">Сохранено активов на суммы свыше 10 млрд. рублей</h1>
 
     <a href="" class="second__btn">
       <div class="second__btn_img">
@@ -250,7 +278,7 @@
     </div>
   </section>
 
-  <section class="reviews" id="reviews">
+  <section class="reviews menuItemCont" id=" reviews">
     <div class="container">
       <h1 class="reviews__title">Отзывы и благодарности</h1>
 
@@ -351,11 +379,11 @@
     </a>
   </section>
 
-  <footer class="footer" id="contacts">
+  <footer class="footer menuItemCont" id=" contacts">
     <div class="container">
       <div class="footer__contact_items">
 
-        <a href="" class="footer__contact_item">
+        <a href="http://t.me/+79263047120" class="footer__contact_item">
           <div class="footer__contact_text">Primary</div>
           <div class="footer__contact_box">
             <span href="" class="footer__contact_link">Telegram</span>
@@ -368,7 +396,8 @@
 
         </a>
 
-        <a href="" class="footer__contact_item">
+        <a href="https://wa.me/79263047120?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20"
+          class="footer__contact_item">
           <div class="footer__contact_text">Secondary</div>
           <div class="footer__contact_box">
             <span href="" class="footer__contact_link">WhatsApp</span>
@@ -380,7 +409,7 @@
           </div>
         </a>
 
-        <a href="" class="footer__contact_item">
+        <a href="mailto:pulin.ant@gmail.com" class="footer__contact_item">
           <div class="footer__contact_text">Email</div>
           <div class="footer__contact_box">
             <span href="" class="footer__contact_link">pulin.ant@gmail.com</span>
@@ -392,7 +421,7 @@
           </div>
         </a>
 
-        <a href="" class="footer__contact_item">
+        <a href="tel:+79263047120" class="footer__contact_item">
           <div class="footer__contact_text">Phone</div>
           <div class="footer__contact_box">
             <span href="" class="footer__contact_link">+7 926 304 71 20</span>
@@ -406,6 +435,20 @@
       </div>
     </div>
   </footer>
+
+  <div class="social__wrapper">
+    <div class="social__items">
+      <a href="" class="social__item_link">
+        <img src="public/Phone.svg" alt="">
+      </a>
+      <a href="" class="social__item_link">
+        <img src="public/Telegram.svg" alt="">
+      </a>
+      <a href="" class="social__item_link">
+        <img src="public/whatsapp.svg" alt="">
+      </a>
+    </div>
+  </div>
 
   <script type="module" src="/main.js"></script>
 </body>

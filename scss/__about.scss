@@ -50,6 +50,11 @@
       position: absolute;
       top: 50px;
       right: 60px;
+
+      & img {
+        animation: up_down 2s infinite linear;
+        
+      }
     }
 }
 
@@ -103,6 +108,7 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+overflow: hidden;
 
   padding-top: 125px;
 
@@ -128,3 +134,16 @@ background-size: cover;
 
 }
 
+@keyframes up_down {
+   0% {
+     transform: translate3d(0, -10px, 0);
+   }
+
+   50% {
+     transform: translate3d(0, 10px, 0);
+   }
+
+   100% {
+     transform: translate3d(0, -10px, 0);
+   }
+}

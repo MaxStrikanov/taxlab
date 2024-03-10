@@ -144,6 +144,7 @@
   background-color: $acccent-color;
   gap: 80px;
   margin-top: 246px;
+  overflow: hidden;
   
 
   & span {
@@ -172,6 +173,7 @@
   transform: rotate(-6deg);
   backdrop-filter: blur(16px);
   background: rgba(183, 171, 152, 0.4);
+  overflow: hidden;
 
   & span {
     display: flex;
@@ -219,4 +221,34 @@
   background-position-y: center;
   background-size: inherit;
   padding-bottom: 200px;
+  overflow: hidden;
 }
+
+.social {
+
+  &__wrapper {
+    border: 2px solid rgba(183, 171, 152, 0.2);
+    border-radius: 46px;
+    backdrop-filter: blur(16px);
+    background: rgba(9, 9, 9, 0.4);
+    display: inline-block;
+    padding: 24px 16px 24px 16px;
+    position: fixed;
+    left: 55px;
+    bottom: 10px;
+  }
+
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+
+  &__item {
+
+    &_link {}
+  }
+}
+

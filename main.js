@@ -9,4 +9,3 @@ accordion()
 insertServisesCards()
 handleMarquee()
 links()
-
