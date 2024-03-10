@@ -4,12 +4,34 @@
   position: relative;
 }
 
+html{
+  scroll-behavior:smooth
+}
+
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 .main__title {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 120px;
+  position: relative;
+
+  &_img {
+    position: absolute;
+    top: -20px;
+    left: 20rem;
+    animation: up_down 5s infinite ease-in-out;
+  
+  }
 }
 
 .title {
@@ -19,7 +41,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 15%;
+    letter-spacing: 5px;
     text-align: left;
     text-transform: uppercase;
     color: $acccent-color;
@@ -74,7 +96,7 @@
     top: 0;
     left: 0;
     background: rgb(223, 187, 135);
-    transform: translateX(-410px);
+    transform: translateX(-100%);
     color: $base-color;
     font-size: 20px;
     align-items: center;
@@ -122,7 +144,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 15%;
+    letter-spacing: 5px;
     text-align: left;
     text-transform: uppercase;
     color: $acccent-color;
@@ -143,7 +165,7 @@
   padding: 32px;
   background-color: $acccent-color;
   gap: 80px;
-  margin-top: 246px;
+  margin-top: 120px;
   overflow: hidden;
   
 
@@ -164,8 +186,8 @@
   display: flex;
   gap: 80px;
   position: absolute;
-  top: 2px;
-  left: 0;
+  bottom: 4px;
+  left: -50px;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -210,6 +232,16 @@
 
 .line__wrapper {
   position: relative;
+  overflow-x: clip;
+  width: 100%;
+
+  &_img {
+    position: absolute;
+    right: 300px;
+    bottom: 20px;
+    z-index: 1000;
+    animation: up_down 6s infinite ease-in-out;
+  }
 }
 
 
@@ -220,8 +252,10 @@
   background-position-x: 175px;
   background-position-y: center;
   background-size: inherit;
-  padding-bottom: 200px;
-  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .social {
@@ -234,8 +268,8 @@
     display: inline-block;
     padding: 24px 16px 24px 16px;
     position: fixed;
-    left: 55px;
-    bottom: 10px;
+    left: 64px;
+    bottom: 64px;
   }
 
 
@@ -248,7 +282,16 @@
 
   &__item {
 
-    &_link {}
+    &_link {
+      
+      &:hover{
+        & svg {
+          fill: $acccent-color;
+          transition: .5s all;
+        }
+      }
+
+    }
   }
 }
 

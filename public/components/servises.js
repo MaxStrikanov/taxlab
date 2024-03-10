@@ -62,12 +62,12 @@ const insertServisesCards = () => {
 
                     <a href="" class="servises__item_order">
                         <span>Заказать услугу</span>
-                        <svg width="11.000000" height="11.000000" viewBox="0 0 11 11" fill="none"
+                        <svg width="11.000000" height="11.000000" viewBox="0 0 11 11" fill="#B7AB98"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs />
                             <path id="Vector"
                             d="M0 0L11 0L11 10.9949L8.80005 10.9949L8.80005 3.8125L1.60913 11L0.0534668 9.44507L7.30298 2.19897L0 2.19897L0 0Z"
-                            fill="#B7AB98" fill-opacity="1.000000" fill-rule="evenodd" />
+                             fill-opacity="1.000000" fill-rule="evenodd" />
                         </svg>
                         </a>
                     </div>

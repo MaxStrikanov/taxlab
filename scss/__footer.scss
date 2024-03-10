@@ -33,6 +33,7 @@
           flex-direction: column;
           text-decoration: none;
           transition: all .3s;
+          padding: 0 4px;
 
           &:hover {
             background-color: $acccent-color;

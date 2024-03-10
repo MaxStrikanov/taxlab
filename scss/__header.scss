@@ -12,7 +12,7 @@
     align-items: center;
     padding: 23px 14px 23px 14px;
     box-shadow: 0px 4px 4px 0px rgba(9, 9, 9, 0.4);
-    background: $sec-color;
+    background: $acccent-color;
     z-index: 100;
   }
 
@@ -67,6 +67,9 @@ cursor: pointer;
 }
 
 .ul__reset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
   padding-left: 0;
   list-style: none;
   font-style: normal;
