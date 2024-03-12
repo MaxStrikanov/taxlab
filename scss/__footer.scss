@@ -1,0 +1,103 @@
+.footer {
+  padding: 56px;
+
+  &__contact {
+
+    &_items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+
+      @media (max-width: 580px) {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+
+    &_box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 12px;
+
+      & svg {
+        margin-left: -30px;
+      }
+    }
+
+    &_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-decoration: none;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      padding: 0 4px;
+
+      &:hover {
+        background-color: $acccent-color;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+
+        & .footer__contact_text {
+          color: $base-color;
+          opacity: 1;
+        }
+
+        & .footer__contact_link {
+          color: $base-color;
+        }
+      }
+    }
+
+    &_text {
+      font-family: 'Montserrat';
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 160%;
+      letter-spacing: 0%;
+      color: $sec-color;
+      opacity: 0.5;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+
+    &_link {
+      font-family: 'Montserrat Bold';
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 160%;
+      letter-spacing: 0%;
+      color: $sec-color;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+    }
+  }
+}

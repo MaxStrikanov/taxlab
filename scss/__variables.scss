@@ -1,0 +1,14 @@
+$base-color: rgb(9, 9, 9);
+$acccent-color: rgb(223, 187, 135);
+$sec-color: rgb(183, 171, 152);
+$stroke-color:rgba(183,171,152,0.3);
+$white: #fff;
+$position-x: 10px;
+
+body {
+    font-family: 'SONGER SemiExpanded';
+    background-color: $base-color;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}

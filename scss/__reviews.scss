@@ -1,0 +1,110 @@
+.reviews {
+  padding: 220px 0;
+  scroll-margin-top: -7rem;
+  background-image: url("/public/Shape_2.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position-x: -50%;
+  background-position-y: 85%;
+
+  &__title {
+    font-family: 'SONGER Bold';
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0.3rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: $sec-color;
+    margin-bottom: 32px;
+    opacity: .7;
+  }
+
+  &__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+
+    &_img {
+      position: absolute;
+      right: 10px;
+      top: 48%;
+      -webkit-animation: up_down 7s infinite ease-in-out;
+              animation: up_down 7s infinite ease-in-out;
+    }
+
+
+
+  }
+
+  &__item {
+    border-top: 1px solid rgba(183, 171, 152, 0.304);
+    padding: 50px 0;
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 65px;
+      left: -50px;
+    }
+
+    @media (max-width: 580px) {
+      padding: 40px 0;
+    }
+
+    &_text {
+
+
+      & p {
+        font-family: 'Montserrat Bold';
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0%;
+        margin-top: 20px;
+        color: $sec-color;
+
+        @media (max-width: 580px) {
+          font-size: 18px;
+        }
+      }
+
+      & span {
+        color: $acccent-color;
+      }
+    }
+
+    &_company {
+      font-family: 'Montserrat';
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 160%;
+      letter-spacing: 0%;
+      margin-top: 32px;
+      color: $sec-color;
+      opacity: .5;
+
+      @media (max-width: 580px) {
+        font-size: 12px;
+      }
+    }
+
+    &_name {
+      font-family: 'Montserrat Bold';
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 160%;
+      letter-spacing: 0%;
+      color: $sec-color;
+
+      @media (max-width: 580px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

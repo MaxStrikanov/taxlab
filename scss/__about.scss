@@ -1,0 +1,227 @@
+.about {
+  position: relative;
+  margin-top: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: left;
+
+  @media (max-width:580px) {
+    margin-top: 400px;
+  }
+
+
+  &__suptext {
+    font-family: 'SONGER Bold';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: $sec-color;
+    margin-bottom: 24px;
+    opacity: 0.7;
+  }
+
+  &__title {
+    text-align: left;
+    font-family: 'Montserrat Bold';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: $sec-color;
+
+    @media (max-width: 580px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: $sec-color;
+    max-width: min(80%, 1118px);
+    opacity: .7;
+  }
+
+  &__img {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+
+    @media (max-width: 580px) {
+      top: -370px;
+    }
+
+    & img {
+      -webkit-animation: up_down 7s infinite ease-in-out;
+      animation: up_down 7s infinite ease-in-out;
+
+    }
+  }
+}
+
+.color {
+  color: $acccent-color !important;
+}
+
+.label__wrapper {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+  @media (max-width:580px) {
+    right: 25px;
+    top: -185px;
+  }
+}
+
+
+.Label__text {
+  width: 148px;
+  height: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: rgba(183, 171, 152, 0.1);
+  font-family: 'Unbounded';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(183, 171, 152);
+  position: relative;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 143px;
+    height: 118px;
+    border: 1px solid rgb(223, 187, 135);
+  }
+}
+
+
+.experience {
+  background-image: url('./../public/tax.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 120px;
+  position: relative;
+
+  @media (max-width:580px) {
+    & .glossy__line {
+      top: 100px;
+  }
+  }
+
+  &_img {
+    position: absolute;
+    bottom: 100px;
+    right: 300px;
+    -webkit-animation: up_down 7s infinite ease-in-out;
+    animation: up_down 7s infinite ease-in-out;
+
+    @media (max-width:580px) {
+      bottom: 50px;
+      width: 140px;
+      right: 0px;
+      z-index: 1000;
+    }
+  }
+
+  &__text {
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    text-align: left;
+    font-family: 'Montserrat Bold';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: $sec-color;
+
+    @media (max-width: 580px) {
+      font-size: 30px;
+    }
+
+    &:nth-child(5) {
+      margin-top: 24px;
+    }
+  }
+
+
+}
+
+@-webkit-keyframes up_down {
+  0% {
+    -webkit-transform: translate3d(0, -$position-x, 0);
+    transform: translate3d(0, -$position-x, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, $position-x, 0);
+    transform: translate3d(0, $position-x, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -$position-x, 0);
+    transform: translate3d(0, -$position-x, 0);
+  }
+}
+
+@keyframes up_down {
+  0% {
+    -webkit-transform: translate3d(0, -$position-x, 0);
+    transform: translate3d(0, -$position-x, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, $position-x, 0);
+    transform: translate3d(0, $position-x, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -$position-x, 0);
+    transform: translate3d(0, -$position-x, 0);
+  }
+}

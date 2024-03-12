@@ -1,0 +1,230 @@
+.help {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-image: url('./../public/image 3.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+
+  &__img {
+    z-index: 1;
+    position: absolute;
+    bottom: 5px;
+    left: 20%;
+    -webkit-animation: up_down 6s infinite ease-in-out;
+    animation: up_down 6s infinite ease-in-out;
+
+    @media (max-width:540px) {
+      width: 100px;
+      bottom: 60px;
+      left: 0%;
+    }
+  }
+
+
+  @media (max-width: 580px) {
+    overflow-y: hidden;
+  }
+
+  &__suptitle {
+    font-family: "SONGER SemiExpanded";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $sec-color;
+    margin-bottom: 32px;
+
+    @media (max-width: 580px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__title {
+    font-family: 'Unbounded';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 79px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $sec-color;
+    max-width: 1131px;
+
+    @media (max-width: 580px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+
+  & .running__line {
+    background-color: $sec-color;
+    opacity: 0.7;
+
+    & span {
+      color: $base-color;
+      -webkit-animation: 5s running_line infinite linear;
+      animation: 5s running_line infinite linear;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+  }
+}
+
+.second__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid $sec-color;
+  border-radius: 46px;
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(223, 187, 135, 0.1);
+  box-shadow: 0px 0px 24px 0px rgba(223, 187, 135, 0.1);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 8px 32px 8px 8px;
+  text-decoration: none;
+  margin-top: 56px;
+  overflow: hidden;
+  letter-spacing: 0.2rem;
+  position: relative;
+
+  &:hover &_hover {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+
+  }
+
+  &_hover {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    font-family: 'SONGER SemiExpanded';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background: $sec-color;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    color: $base-color;
+    font-size: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    @media (max-width: 580px) {
+      font-size: 12px;
+    }
+  }
+
+  &_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 46px;
+    padding: 11px;
+    background: $sec-color;
+    width: 25px;
+    height: 25px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    @media (max-width: 580px) {
+      width: 20px;
+      height: 20px;
+    }
+
+    img {
+      width: 23px;
+      height: 23px;
+
+      @media (max-width: 580px) {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  &_text {
+    font-family: 'SONGER SemiExpanded';
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 15%;
+    text-align: left;
+    text-transform: uppercase;
+    color: $sec-color;
+
+    @media (max-width: 580px) {
+      font-size: 10px;
+      margin-left: 8px;
+    }
+
+  }
+}
+
+
+.down {
+  padding-bottom: 140px;
+  background-image: url('./../public/desert_clock.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    bottom: -120px;
+    right: 250px;
+    -webkit-animation: up_down 7s infinite ease-in-out;
+    animation: up_down 7s infinite ease-in-out;
+
+    @media (max-width:580px) {
+      bottom: -35px;
+      width: 100px;
+      right: 0px;
+    }
+  }
+}
