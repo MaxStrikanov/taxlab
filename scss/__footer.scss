@@ -1,6 +1,10 @@
 .footer {
   padding: 56px;
 
+  @media (max-width:580px) {
+    padding: 56px 56px 90px 56px;
+  }
+
   &__contact {
 
     &_items {
